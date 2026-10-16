@@ -38,7 +38,7 @@
 
 One ESP32 reads a pushbutton and controls an LED on each of two other boards over Bluetooth Low Energy. Hold the button for `ON`; release it for `OFF`. Separate FreeRTOS workers handle the two command paths while a background worker attempts reconnection.
 
-Built for **BCA188, Laboratory Activity 7** at **Mindanao State University–Iligan Institute of Technology (MSU-IIT)**.
+An individual implementation by **[Yestin Paraguya](https://github.com/xavieryyyyyy)** for **BCA188, Laboratory Activity 7** at **Mindanao State University–Iligan Institute of Technology (MSU-IIT)**. See [group collaboration](#group-collaboration) for the separate team project.
 
 <table>
   <tr>
@@ -99,8 +99,8 @@ Portrait recording of the three-board prototype, pushbutton, and LED outputs.
 The project used **Arduino IDE 2.3.10** with **esp32 by Espressif Systems 3.3.11**. BLE and FreeRTOS are included in that board package. Use **115200 baud** for all three Serial Monitors.
 
 ```sh
-git clone https://github.com/xavieryyyyyy/Master-Slave-BLE.git
-cd Master-Slave-BLE
+git clone https://github.com/xavieryyyyyy/esp32_master-slave-ble_comm.git
+cd esp32_master-slave-ble_comm
 ```
 
 1. **Upload the Slaves.** Open [`slave1.ino`](slave1/slave1.ino) for the black ESP32 and [`slave2.ino`](slave2/slave2.ino) for the ESP32-S3. Select the matching [board targets](#firmware) and COM ports.
@@ -231,11 +231,30 @@ The modular Master needs separate compile, upload, control, disconnect/reconnect
 
 ## <img src="docs/assets/icons/users.svg" width="23" height="23" alt=""> Team and contributions
 
-| Team member | Role | Contributions |
+### Individual implementation
+
+This repository documents **Yestin Paraguya's individual implementation**, built and tested using his own three ESP32 boards. Its firmware, wiring photographs, screenshots, demonstration videos, and recorded test results belong to that build. The modular Master still requires separate compile and hardware verification.
+
+| Author | Work in this repository |
+| :--- | :--- |
+| [Yestin Paraguya](https://github.com/xavieryyyyyy) | Master and both Slave firmware, hardware assembly, system integration, testing, documentation, screenshots, and demonstration videos. |
+
+### Group collaboration
+
+Yestin also contributes Master development to the separate [group repository](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32). Kenneth and Regine develop the group Slave firmware using their own hardware. The roles below describe that collaboration; this repository's test results do not establish validation of the group's build.
+
+| Group member | Role | Development branch |
 | :--- | :--- | :--- |
-| [Yestin Paraguya](https://github.com/xavieryyyyyy) | Master development and project integration | Master firmware, system integration, documentation, screenshots, demonstration videos, and supporting project work. |
-| [Kenneth O. Restauro](https://github.com/kinitgwapo) | Slave development | Slave firmware and peripheral-side implementation. |
-| [Regine Bermudo](https://github.com/REGINE-BERMUDO) | Slave development | Slave firmware and peripheral-side implementation. |
+| [Yestin Paraguya](https://github.com/xavieryyyyyy) | Master development | [Paraguya](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32/tree/Paraguya) |
+| [Kenneth O. Restauro](https://github.com/kinitgwapo) | Slave development | [Restauro](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32/tree/Restauro) |
+| [Regine Bermudo](https://github.com/REGINE-BERMUDO) | Slave development | [Bermudo](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32/tree/Bermudo) |
+
+### Project repositories
+
+| Repository | Purpose |
+| :--- | :--- |
+| [Yestin's repository](https://github.com/xavieryyyyyy/esp32_master-slave-ble_comm) | Individual submission: the complete three-board implementation, documentation, demonstration videos, and test evidence. |
+| [Regine's repository](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32) | Group collaboration: Master and Slave work developed on separate member branches. |
 
 <a id="documentation"></a>
 
@@ -248,7 +267,7 @@ The modular Master needs separate compile, upload, control, disconnect/reconnect
 | [FreeRTOS and recovery](docs/technical-guide.md#freertos-design-and-fault-tolerance) | Command queues, mutexes, scanning, and timing limits |
 | [Troubleshooting](docs/technical-guide.md#troubleshooting) | Build, upload, wiring, and BLE checks |
 | [Development and next steps](docs/technical-guide.md#limitations-and-future-improvements) | Independent buttons, timing measurements, security, and further testing |
-| [Team and contributions](docs/technical-guide.md#team-and-contributions) | Course details, team members, and individual responsibilities |
+| [Team and contributions](docs/technical-guide.md#team-and-contributions) | Individual authorship, group collaboration, and repository links |
 
 <details>
 <summary><strong>References and project notes</strong></summary>
@@ -264,6 +283,6 @@ The project owners have not selected a software license. Group/section and instr
 
 <p align="center">
   <a href="#top">Back to top</a> ·
-  <a href="https://github.com/xavieryyyyyy/Master-Slave-BLE">Repository</a> ·
+  <a href="https://github.com/xavieryyyyyy/esp32_master-slave-ble_comm">Repository</a> ·
   <a href="docs/technical-guide.md">Technical guide</a>
 </p>

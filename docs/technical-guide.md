@@ -519,11 +519,30 @@ The original firmware's tests cover BLE/GATT control, continued operation of a s
 **Activity:** Laboratory Activity 7, Master-Slave BLE Communication (ESP32)<br>
 **Institution:** Mindanao State University-Iligan Institute of Technology (MSU-IIT)
 
-| Team member | Role | Contributions |
+### Individual implementation
+
+This repository documents **Yestin Paraguya's individual implementation**, built and tested using his own three ESP32 boards. Its firmware, wiring photographs, screenshots, demonstration videos, and recorded test results belong to that build. The modular Master still requires separate compile and hardware verification.
+
+| Author | Work in this repository |
+| :--- | :--- |
+| [Yestin Paraguya](https://github.com/xavieryyyyyy) | Master and both Slave firmware, hardware assembly, system integration, testing, documentation, screenshots, and demonstration videos. |
+
+### Group collaboration
+
+Yestin also contributes Master development to the separate [group repository](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32). Kenneth and Regine develop the group Slave firmware using their own hardware. The roles below describe that collaboration; this repository's test results do not establish validation of the group's build.
+
+| Group member | Role | Development branch |
 | :--- | :--- | :--- |
-| [Yestin Paraguya](https://github.com/xavieryyyyyy) | Master development and project integration | Master firmware, system integration, documentation, screenshots, demonstration videos, and supporting project work. |
-| [Kenneth O. Restauro](https://github.com/kinitgwapo) | Slave development | Slave firmware and peripheral-side implementation. |
-| [Regine Bermudo](https://github.com/REGINE-BERMUDO) | Slave development | Slave firmware and peripheral-side implementation. |
+| [Yestin Paraguya](https://github.com/xavieryyyyyy) | Master development | [Paraguya](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32/tree/Paraguya) |
+| [Kenneth O. Restauro](https://github.com/kinitgwapo) | Slave development | [Restauro](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32/tree/Restauro) |
+| [Regine Bermudo](https://github.com/REGINE-BERMUDO) | Slave development | [Bermudo](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32/tree/Bermudo) |
+
+### Project repositories
+
+| Repository | Purpose |
+| :--- | :--- |
+| [Yestin's repository](https://github.com/xavieryyyyyy/esp32_master-slave-ble_comm) | Individual submission: the complete three-board implementation, documentation, demonstration videos, and test evidence. |
+| [Regine's repository](https://github.com/REGINE-BERMUDO/Master-Slave-BLE-Communication-ESP32) | Group collaboration: Master and Slave work developed on separate member branches. |
 
 Group/section and instructor details are awaiting the team's input.
 
@@ -553,4 +572,4 @@ No software license has been selected. The project owners need to choose and inc
 
 </details>
 
-<p align="center"><a href="#top">Back to top</a> · <a href="https://github.com/xavieryyyyyy/Master-Slave-BLE">View on GitHub</a></p>
+<p align="center"><a href="#top">Back to top</a> · <a href="https://github.com/xavieryyyyyy/esp32_master-slave-ble_comm">View on GitHub</a></p>
