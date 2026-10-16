@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<title id="title">ESP32 Master-Slave BLE</title>
+<desc id="desc">One Master controls two peripherals over BLE. Three hardware columns describe the pushbutton input and two LED outputs. The original FreeRTOS Master is hardware-tested.</desc>
+<rect width="1280" height="640" rx="12" fill="#101113"/>
+<path d="M30 71H1250M30 558H1250" stroke="#333236"/>
+<g font-family="Bahnschrift,Arial,sans-serif">
+<g transform="translate(34 26)" fill="none" stroke="#e6a17c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="30" height="30" rx="7" stroke="#775341"/><path d="m9 9 13 12-7 6V3l7 6L9 21"/>
+</g>
+<text x="78" y="47" fill="#f1eee7" font-size="19" font-weight="600">ESP32 / Master-Slave BLE</text>
+<rect x="1084" y="29" width="160" height="25" rx="12" fill="#26201d"/>
+<text x="1164" y="46" fill="#e6a17c" font-size="12" text-anchor="middle" letter-spacing="1">BCA188 / LAB 7</text>
+<text x="42" y="175" fill="#f1eee7" font-size="63" font-weight="700" letter-spacing="-2">One master.</text>
+<text x="42" y="248" fill="#f1eee7" font-size="63" font-weight="700" letter-spacing="-2">Two peripherals.</text>
+<text x="42" y="321" fill="#e6a17c" font-size="63" font-weight="700" letter-spacing="-2">Connected by BLE.</text>
+<g fill="#ada8a1" font-size="20">
+<text x="46" y="370">Button-controlled LEDs, independent</text>
+<text x="46" y="400">FreeRTOS workers, and automatic recovery.</text>
+</g>
+<g font-size="14" text-anchor="middle">
+<rect x="46" y="450" width="69" height="29" rx="4" fill="#252120" stroke="#554136"/><text x="80" y="470" fill="#e6a17c">C++</text>
+<rect x="125" y="450" width="91" height="29" rx="4" fill="#1c1c1f" stroke="#333236"/><text x="170" y="470" fill="#c2bdb7">Arduino</text>
+<rect x="226" y="450" width="107" height="29" rx="4" fill="#1c1c1f" stroke="#333236"/><text x="279" y="470" fill="#c2bdb7">FreeRTOS</text>
+</g>
+<g fill="#171719" stroke="#333236"><rect x="611" y="114" width="195" height="392" rx="7"/><rect x="822" y="114" width="195" height="392" rx="7"/><rect x="1033" y="114" width="195" height="392" rx="7"/></g>
+<g font-size="15" font-weight="600" fill="#f1eee7">
+<text x="653" y="150">MASTER</text><text x="864" y="150">SLAVE 1</text><text x="1075" y="150">SLAVE 2</text>
+</g>
+<g fill="none" stroke="#e6a17c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(628 134)"><rect x="0" y="0" width="12" height="12" rx="2"/><path d="M3-3v3m6-3v3M3 12v3m6-3v3M-3 3h3m-3 6h3m12-6h3m-3 6h3"/></g>
+<g transform="translate(839 134)"><rect x="0" y="0" width="12" height="12" rx="2"/><path d="M3-3v3m6-3v3M3 12v3m6-3v3M-3 3h3m-3 6h3m12-6h3m-3 6h3"/></g>
+<g transform="translate(1050 134)"><rect x="0" y="0" width="12" height="12" rx="2"/><path d="M3-3v3m6-3v3M3 12v3m6-3v3M-3 3h3m-3 6h3m12-6h3m-3 6h3"/></g>
+</g>
+<g fill="#ada8a1" font-size="14">
+<text x="628" y="184">ESP32-WROOM-32</text><text x="839" y="184">ESP32-WROOM-32</text><text x="1050" y="184">ESP32-S3-N16R8</text>
+<text x="628" y="211">Central / GATT client</text><text x="839" y="211">Peripheral / server</text><text x="1050" y="211">Peripheral / server</text>
+</g>
+<g fill="#211d1b" stroke="#49372e"><rect x="627" y="232" width="163" height="28" rx="4"/><rect x="838" y="232" width="163" height="28" rx="4"/><rect x="1049" y="232" width="163" height="28" rx="4"/></g>
+<g fill="#e6a17c" font-size="12" font-family="Consolas,monospace"><text x="636" y="251">LAB7_MASTER</text><text x="847" y="251">LAB7_SLAVE_1</text><text x="1058" y="251">LAB7_SLAVE_2</text></g>
+<path d="M627 282H790M838 282H1001M1049 282H1212" stroke="#333236"/>
+<g fill="#f1eee7" font-size="21" font-weight="600"><text x="628" y="319">GPIO 23</text><text x="839" y="319">GPIO 18</text><text x="1050" y="319">GPIO 18</text></g>
+<g fill="#ada8a1" font-size="14">
+<text x="628" y="349">Pushbutton input</text><text x="839" y="349">External LED output</text><text x="1050" y="349">External LED output</text>
+<text x="628" y="380">50 ms debounce</text><text x="839" y="380">ON / OFF commands</text><text x="1050" y="380">ON / OFF commands</text>
+<text x="628" y="411">Two command queues</text><text x="839" y="411">Dedicated BLE link</text><text x="1050" y="411">Dedicated BLE link</text>
+<text x="628" y="442">Reconnect worker</text><text x="839" y="442">State sync on recovery</text><text x="1050" y="442">State sync on recovery</text>
+</g>
+<g fill="#736e69" font-size="12"><text x="628" y="484">FreeRTOS Master</text><text x="839" y="484">slave1.ino</text><text x="1050" y="484">slave2.ino</text></g>
+<g fill="#ada8a1" font-size="15"><text x="44" y="606"><tspan fill="#f1eee7" font-size="22" font-weight="700">3</tspan><tspan dx="8">boards</tspan></text><text x="184" y="606"><tspan fill="#f1eee7" font-size="22" font-weight="700">2</tspan><tspan dx="8">BLE links</tspan></text><text x="350" y="606"><tspan fill="#f1eee7" font-size="22" font-weight="700">3</tspan><tspan dx="8">application tasks</tspan></text><text x="1235" y="606" text-anchor="end"><tspan fill="#e6a17c">Original Master</tspan><tspan dx="10">hardware-tested</tspan></text></g>
+</g></svg>

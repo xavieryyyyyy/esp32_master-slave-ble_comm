@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="70" viewBox="0 0 300 70" role="img" aria-label="MULTI-DEVICE BLE: 1 Master + 2 Slaves">
+<defs><linearGradient id="surface" x2="0" y2="1"><stop stop-color="#303842"/><stop offset="1" stop-color="#111820"/></linearGradient></defs>
+<rect x=".5" y=".5" width="299" height="69" rx="8" fill="url(#surface)" stroke="#607080"/>
+<rect x="4" y="4" width="292" height="62" rx="5" fill="none" stroke="#28c9ff" stroke-opacity=".48"/>
+<g transform="translate(16 16) scale(1.55)" fill="none" stroke="#28c9ff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="6" rx="1"/><rect x="2" y="16" width="8" height="6" rx="1"/><rect x="14" y="16" width="8" height="6" rx="1"/><path d="M12 8v4M6 16v-4h12v4"/></g>
+<g font-family="Verdana,Arial,sans-serif"><text x="66" y="27" fill="#28c9ff" font-size="9" letter-spacing="1.7">MULTI-DEVICE BLE</text><text x="66" y="48" fill="#f5f8fc" font-size="14" font-weight="600">1 Master + 2 Slaves</text></g></svg>

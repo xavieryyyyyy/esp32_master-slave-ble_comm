@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="26" viewBox="0 0 164 26" role="img" aria-label="Arduino IDE: 2.3.10">
+<defs><linearGradient id="shine" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="clip"><rect width="164" height="26" rx="4"/></clipPath></defs>
+<g clip-path="url(#clip)"><rect width="164" height="26" fill="#555"/><rect x="104" width="60" height="26" fill="#00d4cf"/><rect width="164" height="26" fill="url(#shine)"/></g>
+<g transform="translate(6 5) scale(.67)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 5-6 7 6 7m10-14 6 7-6 7M14 3l-4 18"/></g>
+<g font-family="Verdana,Arial,sans-serif" font-size="11"><text x="27" y="18" fill="#fff">Arduino IDE</text><text x="114" y="18" fill="#102121">2.3.10</text></g></svg>

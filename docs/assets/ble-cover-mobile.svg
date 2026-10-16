@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="760" viewBox="0 0 720 760" role="img" aria-labelledby="title desc">
+<title id="title">ESP32 Master-Slave BLE</title><desc id="desc">One master and two peripherals connected over BLE, with independent FreeRTOS workers and automatic recovery.</desc>
+<rect width="720" height="760" rx="12" fill="#101113"/>
+<g font-family="Bahnschrift,Arial,sans-serif">
+<text x="32" y="48" fill="#f1eee7" font-size="25" font-weight="600">ESP32 / Master-Slave BLE</text>
+<path d="M32 72H688M32 670H688" stroke="#333236"/>
+<g font-size="55" font-weight="700" letter-spacing="-1.5"><text x="30" y="151" fill="#f1eee7">One master.</text><text x="30" y="219" fill="#f1eee7">Two peripherals.</text><text x="30" y="287" fill="#e6a17c">Connected by BLE.</text></g>
+<g font-size="23" fill="#ada8a1"><text x="32" y="339">Button-controlled LEDs, independent</text><text x="32" y="374">FreeRTOS workers, and automatic recovery.</text></g>
+<g fill="#171719" stroke="#333236"><rect x="32" y="423" width="208" height="199" rx="7"/><rect x="256" y="423" width="208" height="199" rx="7"/><rect x="480" y="423" width="208" height="199" rx="7"/></g>
+<g font-size="21" fill="#f1eee7" font-weight="600"><text x="49" y="463">MASTER</text><text x="273" y="463">SLAVE 1</text><text x="497" y="463">SLAVE 2</text></g>
+<g font-size="20" fill="#ada8a1"><text x="49" y="505">ESP32</text><text x="273" y="505">ESP32</text><text x="497" y="505">ESP32-S3</text><text x="49" y="545">GPIO 23</text><text x="273" y="545">GPIO 18</text><text x="497" y="545">GPIO 18</text></g>
+<g font-size="19" fill="#e6a17c"><text x="49" y="588">Pushbutton</text><text x="273" y="588">LED output</text><text x="497" y="588">LED output</text></g>
+<text x="32" y="715" fill="#ada8a1" font-size="22">C++ / Arduino / BLE GATT / FreeRTOS</text>
+</g></svg>
